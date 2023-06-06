@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&display=swap');
+
+* {
+    font-family: 'Epilogue', sans-serif;
+    font-size: 18px;
+}
+
+.header {
+    margin: 3rem 3rem 3rem 3rem;
+}
+
+.navigation {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1.5rem;
+}
+
+.navigation-options {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.nav-option {
+    color: hsl(0, 0%, 41%);
+    text-decoration: none;
+    font-family: 'Epilogue', sans-serif;
+}
+
+.nav-option:hover {
+    color: hsl(0, 0%, 8%);
+    transition: 0.5s;
+}
+
+.login-options {
+    font-family: 'Epilogue', sans-serif;
+    display: flex;
+    gap: 3rem;
+}
+
+.log-option {
+    color: hsl(0, 0%, 41%);
+    text-decoration: none;
+}
+
+.log-option:hover {
+    color: hsl(0, 0%, 8%);
+    transition: 0.5s;
+}
+
+.register-button {
+    border: hsl(0, 0%, 41%) 2px solid;
+    padding: 15px 30px;
+    border-radius: 15px;
+}
+
+.register-button:hover {
+    border-color:hsl(0, 0%, 8%);
+}
+
+.main {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 15rem;
+}
+
+.main-text {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.main-title {
+    font-size: 5rem;
+    font-weight: 700;
+    width: 70%;
+}
+
+.main-phrase {
+    color: hsl(0, 0%, 41%);
+    width: 70%;
+}
+
+.img-main {
+    width: 70%;
+}
+
+.button-learn-more {
+    font-family: 'Epilogue', sans-serif;
+    text-decoration: none;
+    background-color: hsl(0, 0%, 8%);
+    border: hsl(0, 0%, 8%) 2px solid;
+    color: hsl(0, 0%, 98%);
+    padding: 20px 40px;
+    border-radius: 10px;
+    width: 14%;
+    font-weight: 700
+}
+
+.button-learn-more:hover {
+    color: hsl(0, 0%, 8%);
+    background-color: white;
+    border: hsl(0, 0%, 8%) 2px solid;
+    transition: 0.5s;
+}
