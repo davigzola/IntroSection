@@ -6,7 +6,7 @@
 }
 
 .header {
-    margin: 3rem 3rem 3rem 3rem;
+    margin: 3rem 3rem 5rem 3rem;
 }
 
 .navigation {
@@ -16,21 +16,44 @@
     gap: 1.5rem;
 }
 
+.navigation-div {
+    display: flex;
+    gap: 5rem;
+    align-items: center;
+}
+
 .navigation-options {
     display: flex;
     align-items: center;
     gap: 1.5rem;
 }
 
-.nav-option {
+.nav-link {
     color: hsl(0, 0%, 41%);
     text-decoration: none;
     font-family: 'Epilogue', sans-serif;
+    transition: 0.5s;
 }
 
-.nav-option:hover {
+.nav-link:hover {
+    color: hsl(0, 0%, 8%);
+    transition: 0.5s;   
+}
+
+.nav-dropdown {
+    color: hsl(0, 0%, 41%);
+    font-family: 'Epilogue', sans-serif;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.nav-dropdown:hover {
     color: hsl(0, 0%, 8%);
     transition: 0.5s;
+}
+
+.dropdown-arrow {
+    margin-left: 10px;
 }
 
 .login-options {
@@ -42,6 +65,7 @@
 .log-option {
     color: hsl(0, 0%, 41%);
     text-decoration: none;
+    transition: 0.5s;
 }
 
 .log-option:hover {
@@ -53,17 +77,19 @@
     border: hsl(0, 0%, 41%) 2px solid;
     padding: 15px 30px;
     border-radius: 15px;
+    transition: 0.5s;
 }
 
 .register-button:hover {
     border-color:hsl(0, 0%, 8%);
+    transition: 0.5s;
 }
 
 .main {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin: 0 15rem;
+    margin: 0 10rem
 }
 
 .main-text {
@@ -84,7 +110,7 @@
 }
 
 .img-main {
-    width: 70%;
+    width: 35%;
 }
 
 .button-learn-more {
@@ -93,10 +119,11 @@
     background-color: hsl(0, 0%, 8%);
     border: hsl(0, 0%, 8%) 2px solid;
     color: hsl(0, 0%, 98%);
-    padding: 20px 40px;
+    padding: 20px 20px 20px 25px;
     border-radius: 10px;
-    width: 14%;
-    font-weight: 700
+    width: 13%;
+    font-weight: 700;
+    transition: 0.5s;
 }
 
 .button-learn-more:hover {
@@ -104,4 +131,8 @@
     background-color: white;
     border: hsl(0, 0%, 8%) 2px solid;
     transition: 0.5s;
+}
+
+.sponsor {
+    margin: 3rem 3rem 0 0
 }
