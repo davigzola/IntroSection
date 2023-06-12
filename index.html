@@ -9,40 +9,44 @@
   <link rel="stylesheet" href="./css/style.css">
   <link rel="stylesheet" href="./css/reset.css">
   
-  <title>Frontend Mentor | Intro section with dropdown navigation</title>
+  <title>Intro Section | Davi Gazola</title>
 </head>
 <body>
   <header class="header">
     <nav class="navigation">
-      <div class="navigation-div">
+      <section class="navigation-left-section">
         <img src="./img/logo.svg">
+        <img src="./img/icon-menu.svg" class="menu-button">
+        <img src="./img/icon-close-menu.svg" class="menu-close-button">
         <ul class="navigation-options">
           <li class="nav-dropdown">Features<img class="dropdown-arrow" src="./img/icon-arrow-down.svg"></li>
           <li class="nav-dropdown">Company<img class="dropdown-arrow" src="./img/icon-arrow-down.svg"></li>
           <li><a href="" class="nav-link">Careers</a></li>
           <li><a href="" class="nav-link">About</a></li>
         </ul>
-      </div>
-      <ul class="login-options">
-        <li><a href="" class="log-option">Login</a></li> 
-        <li><a href="" class="log-option register-button">Register</a></li>
-      </ul>
+      </section>
+      <section class="navigation-right-section">
+        <ul class="login-options">
+          <li><a href="" class="log-option">Login</a></li> 
+          <li><a href="" class="log-option register-button">Register</a></li>
+        </ul>
+      </section>
     </nav>
   </header>
   <main class="main">
-    <div class="main-text">
+    <section class="main-left-section">
       <h1 class="main-title">Make remote work</h1>
-    <p class="main-phrase">Get your team in sync, no matter your location. Streamline processes, 
-      create team rituals, and watch productivity soar.</p>
-    <a href="" class="button-learn-more">Learn more</a>
-    <div>
-      <img class="sponsor" src="./img/client-databiz.svg">
-      <img class="sponsor" src="./img/client-audiophile.svg">
-      <img class="sponsor"src="./img/client-meet.svg">
-      <img class="sponsor"src="./img/client-maker.svg">
-    </div>
-    </div>
-    <img class="img-main" src="./img/image-hero-desktop.png">
+      <p class="main-phrase">Get your team in sync, no matter your location. Streamline processes, 
+        create team rituals, and watch productivity soar.</p>
+      <a href="" class="button-learn-more">Learn more</a>
+      <div class="all-sponsors">
+        <img class="sponsor" src="./img/client-databiz.svg">
+        <img class="sponsor" src="./img/client-audiophile.svg">
+        <img class="sponsor" src="./img/client-meet.svg">
+        <img class="sponsor" src="./img/client-maker.svg">
+      </div>
+    </section>
+    <picture class="main-right-section"><source media="(max-width: 1000px)" srcset="./img/image-hero-mobile.png"><img class="img-main" src="./img/image-hero-desktop.png"></picture>
   </main>
 </body>
 </html>
