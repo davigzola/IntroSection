@@ -10,6 +10,8 @@
 }   
 
 .body {
+    width: 100vw;
+    height: 100vh;
     background-color: hsl(0, 0%, 98%);
 }
 
@@ -33,6 +35,7 @@
 }
 
 .navigation-left-section {
+    user-select: none;
     display: flex;
     gap: 5rem;
     align-items: center;
@@ -45,6 +48,7 @@
 }
 
 .nav-link {
+    user-select: none;
     color: hsl(0, 0%, 41%);
     text-decoration: none;
     font-family: 'Epilogue', sans-serif;
@@ -63,7 +67,17 @@
     cursor: pointer;
 }
 
+.features {
+    user-select: none;
+}
+
+
+.company {
+    user-select: none;
+}
+
 .dropdown-features, .dropdown-company {
+    user-select: none;
     display: flex;
     flex-direction: column;
     gap: 1.3rem;
@@ -102,11 +116,12 @@
     transition: 0.5s;
 }
 
-.dropdown-arrow {
+#dropdown-arrow-features, #dropdown-arrow-company {
     margin-left: 10px;
 }
 
 .login-options {
+    user-select: none;
     font-family: 'Epilogue', sans-serif;
     display: flex;
     gap: 3rem;
@@ -178,6 +193,7 @@
     font-weight: 700;
     transition: 0.5s;
     border: 2px solid black;
+    user-select: none;
 }
 
 .button-learn-more:hover {
@@ -188,6 +204,7 @@
 }
 
 .all-sponsors {
+    user-select: none;
     margin-top: 10%;
     display: flex;
     align-items: center;
@@ -199,6 +216,7 @@
 }
 
 .main-right-section {
+    user-select: none;
     width: 80rem;
     min-width: 40rem;
 }
@@ -224,6 +242,10 @@
         display: none;
     }
 
+    .dropdown-features, .dropdown-company {
+        position: static;
+    }
+
     .menu-button {
         display: inline;
         cursor: pointer;
@@ -245,9 +267,9 @@
     }
 
     .main-right-section {
-        width: 80%;
-        min-width: none;
+        width: 100%;
     }
+
 
     .main-title {
         font-size: 4rem;
