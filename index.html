@@ -14,11 +14,15 @@
 <body>
   <header class="header">
     <nav class="navigation">
-      <section class="navigation-left-section">
+      <div class="mobile-nav">
         <img src="./img/logo.svg">
-        <img src="./img/icon-menu.svg" class="menu-button">
-        <img src="./img/icon-close-menu.svg" class="menu-close-button">
-        <ul class="navigation-options">
+        <img src="./img/icon-menu.svg" class="open-menu"> 
+      </div>
+  
+      <div class="menu-mobile">
+        <img src="./img/icon-close-menu.svg" class="close-menu hidden">
+        <div class="navigation-ul">
+          <ul class="navigation-options">
           <li class="nav-dropdown">
             <div class="features">Features<img id="dropdown-arrow-features" src="./img/icon-arrow-down.svg"></div>
             <div class="hidden ul-features">
@@ -43,14 +47,12 @@
           <li><a href="" class="nav-link">Careers</a></li>
           <li><a href="" class="nav-link">About</a></li>
         </ul>
-      </section>
-      <section class="navigation-right-section">
         <ul class="login-options">
           <li><a href="" class="log-option">Login</a></li> 
           <li><a href="" class="log-option register-button">Register</a></li>
         </ul>
-      </section>
-      
+      </div>
+    </div>
     </nav>
   </header>
   <main class="main">

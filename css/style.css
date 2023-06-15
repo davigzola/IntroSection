@@ -16,14 +16,10 @@
 }
 
 .header {
-    margin: 3rem 3rem 3rem 3rem;
+    margin: 3rem 3rem 4rem 3rem;
 }
 
-.menu-button {
-    display: none;
-}
-
-.menu-close-button {
+.open-menu {
     display: none;
 }
 
@@ -31,20 +27,18 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 1.5rem;
+    gap: 4rem;
 }
 
-.navigation-left-section {
-    user-select: none;
+.navigation-ul {
     display: flex;
-    gap: 5rem;
-    align-items: center;
 }
 
 .navigation-options {
     display: flex;
     align-items: center;
-    gap: 4rem;;
+    gap: 4rem;
+    margin-right: 68rem;
 }
 
 .nav-link {
@@ -67,12 +61,19 @@
     cursor: pointer;
 }
 
+
 .features {
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
     user-select: none;
 }
 
 
 .company {
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
     user-select: none;
 }
 
@@ -91,13 +92,13 @@
 .dropdown-features {
     position: absolute;
     top: 4.5rem;
-    left: 8rem;
+    left: 12rem;
 }
 
 .dropdown-company {
     position: absolute;
     top: 4.5rem;
-    left: 22.5rem;
+    left: 24.5rem;
 }
 
 .li-features, .li-company {
@@ -227,28 +228,75 @@
 
 @media screen and (max-width: 1000px) {
 
-    .navigation-left-section {
+    .mobile-nav {
         display: flex;
         align-items: flex-start;
-        justify-content: space-between;
-        width: 100%;
+        gap: 38rem;
+    }
+
+    .open-menu {
+        display: block;
+    }
+
+    .menu-mobile {
+        display: none;
+    }
+
+
+    .li-features {
+        box-sizing: border-box;
+        align-items: center;
+    }
+
+    .features {
+        display: flex;
+        align-items: center;
+    }
+
+    .company {
+        display: flex;
+        align-items: center;
+    }
+
+    .menu-close-button {
+        cursor: pointer;
+        position: fixed;
+        top: 5%;
+        left: 85%;
+        display: inline;
+        z-index: 1;
+
     }
 
     .navigation-options {
-        display: none;
-    }
-
-    .login-options {
-        display: none;
+        font-size: 25px;
+        align-items: first baseline;
+        gap: 2rem;
+        flex-direction: column;
+        position: fixed;
+        left: 50%;
+        top: 12%;
+        z-index: 2;
     }
 
     .dropdown-features, .dropdown-company {
         position: static;
+        box-shadow: 0 0 0 0 rgba(255, 255, 255, 1);
+        font-size: 20px;
+        margin-left: 15px;
+        margin-top: 30px;
+        margin-bottom: 20px;
+        padding: 0;
     }
 
-    .menu-button {
-        display: inline;
-        cursor: pointer;
+    .login-options {
+        flex-direction: column;
+        align-items: center;
+        position: fixed;
+        left: 55%;
+        top: 85%;
+        z-index: 1;
+        font-size: 25px
     }
 
     .main {
