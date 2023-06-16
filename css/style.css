@@ -38,7 +38,7 @@
     display: flex;
     align-items: center;
     gap: 4rem;
-    margin-right: 68rem;
+    padding-right: 55rem;
 }
 
 .nav-link {
@@ -91,14 +91,14 @@
 
 .dropdown-features {
     position: absolute;
-    top: 4.5rem;
-    left: 12rem;
+    top: 4rem;
+    left: 11.5rem;
 }
 
 .dropdown-company {
     position: absolute;
-    top: 4.5rem;
-    left: 24.5rem;
+    top: 4rem;
+    left: 24rem;
 }
 
 .li-features, .li-company {
