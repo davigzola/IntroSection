@@ -5,7 +5,7 @@ var companyDropdown = document.querySelector(".company");
 var ulCompany = document.querySelector(".ul-company");
 
 var dropdownArrowFeatures = document.querySelector("#dropdown-arrow-features");
-var dropdownArrowCompany = document.querySelector("#dropdown-arrow-company")
+var dropdownArrowCompany = document.querySelector("#dropdown-arrow-company");
 var dropdownActiveFeatures = false;
 var dropdownActiveCompany = false;
 

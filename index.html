@@ -14,44 +14,42 @@
 <body>
   <header class="header">
     <nav class="navigation">
-      <div class="mobile-nav">
         <img src="./img/logo.svg">
         <img src="./img/icon-menu.svg" class="open-menu"> 
+        <div class="menu-mobile">
+          <img src="./img/icon-close-menu.svg" class="close-menu hidden">
+          <div class="navigation-ul">
+            <ul class="navigation-options">
+              <li class="nav-dropdown">
+                <div class="features">Features<img id="dropdown-arrow-features" src="./img/icon-arrow-down.svg"></div>
+                <div class="hidden ul-features">
+                  <ul class="dropdown-features">
+                    <li class="li-features"><img src="./img/icon-todo.svg">Todo list</li>
+                    <li class="li-features"><img src="./img/icon-calendar.svg">Calendar</li>
+                    <li class="li-features"><img src="./img/icon-reminders.svg">Reminders</li>
+                    <li class="li-features"><img src="./img/icon-planning.svg">Planning</li>
+                  </ul>
+                </div>
+              </li>
+              <li class="nav-dropdown">
+                <div class="company">Company<img id="dropdown-arrow-company" src="./img/icon-arrow-down.svg"></div>
+                <div class="hidden ul-company">
+                  <ul class="dropdown-company">
+                    <li class="li-company">History</li>
+                    <li class="li-company">Our Team</li>
+                    <li class="li-company">Blog</li>
+                  </ul>
+                </div>
+              </li>
+              <li><a href="" class="nav-link">Careers</a></li>
+              <li><a href="" class="nav-link">About</a></li>
+          </ul>
+          <ul class="login-options">
+            <li><a href="" class="log-option">Login</a></li> 
+            <li><a href="" class="log-option register-button">Register</a></li>
+          </ul>
+        </div>
       </div>
-      <div class="menu-mobile">
-        <img src="./img/icon-close-menu.svg" class="close-menu hidden">
-        <div class="navigation-ul">
-          <ul class="navigation-options">
-          <li class="nav-dropdown">
-            <div class="features">Features<img id="dropdown-arrow-features" src="./img/icon-arrow-down.svg"></div>
-            <div class="hidden ul-features">
-              <ul class="dropdown-features">
-                <li class="li-features"><img src="./img/icon-todo.svg">Todo list</li>
-                <li class="li-features"><img src="./img/icon-calendar.svg">Calendar</li>
-                <li class="li-features"><img src="./img/icon-reminders.svg">Reminders</li>
-                <li class="li-features"><img src="./img/icon-planning.svg">Planning</li>
-              </ul>
-            </div>
-          </li>
-          <li class="nav-dropdown">
-            <div class="company">Company<img id="dropdown-arrow-company" src="./img/icon-arrow-down.svg"></div>
-            <div class="hidden ul-company">
-              <ul class="dropdown-company">
-                <li class="li-company">History</li>
-                <li class="li-company">Our Team</li>
-                <li class="li-company">Blog</li>
-              </ul>
-            </div>
-          </li>
-          <li><a href="" class="nav-link">Careers</a></li>
-          <li><a href="" class="nav-link">About</a></li>
-        </ul>
-        <ul class="login-options">
-          <li><a href="" class="log-option">Login</a></li> 
-          <li><a href="" class="log-option register-button">Register</a></li>
-        </ul>
-      </div>
-    </div>
     </nav>
   </header>
   <main class="main">
@@ -67,7 +65,7 @@
         <img class="sponsor" src="./img/client-maker.svg">
       </div>
     </section>
-    <picture class="main-right-section"><source media="(max-width: 1000px)" srcset="./img/image-hero-mobile.png"><img class="img-main" src="./img/image-hero-desktop.png"></picture>
+    <img class="img-main" src="./img/image-hero-desktop.png">
   </main>
   <script src="./js/usingDropdown.js"></script>
   <script src="./js/openingNavigationMenu.js"></script>
