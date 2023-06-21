@@ -40,13 +40,13 @@
 
 .navigation-ul {
     display: flex;
+    gap: 70rem;
 }
 
 .navigation-options {
     display: flex;
     align-items: center;
     gap: 4rem;
-    padding-right: 70rem;
 }
 
 .nav-link {
